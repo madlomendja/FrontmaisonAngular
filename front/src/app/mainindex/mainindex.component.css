@@ -1,0 +1,125 @@
+.clear{
+	clear: both;
+	width: 0;
+	height: 0;
+	padding: 2em 0 2em 0;
+	margin: 2em 0 2em 0;
+}
+
+span {
+  margin: 10px;
+}
+
+.nopuce {
+	list-style-type: none;
+
+}
+
+ul li a:hover {
+	color : white;
+}
+
+#je,#tu,#il,#nous,#vous {
+	font-style: italic;
+}
+
+#pj1,#pj2,#pj3{
+	border: 3px white solid;
+}
+
+/** Classe Clear pour ne annuler les effet de float **/
+.clear{
+	clear: both; /** Arrête de flotter à gauche et à droite **/
+}
+
+
+/* Couleurs personnalisées */
+.orange
+{
+	color: rgb(225, 126, 7)!important;
+}
+.bg-orange
+{
+	background-color: rgb(225, 126, 7);
+}
+.bdr-orange
+{
+	border-color: rgb(225, 126, 7);
+}
+.gray
+{
+	color: rgb(59, 66, 73);
+}
+.bg-gray
+{
+	background-color: rgb(59, 66, 73);
+}
+.bdr-gray
+{
+	border-color: rgb(59, 66, 73);
+}
+.bdr-white
+{
+	border-color: white;
+}
+.bg-darker
+{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Polices personnalisées */
+.amatic
+{
+	font-family: 'Amatic SC', cursive;
+}
+.bebas
+{
+	font-family: 'Bebas Neue', cursive;
+}
+.caveat
+{
+	font-family: 'Caveat', cursive;
+}
+.dokdo
+{
+	font-family: 'Dokdo', cursive;
+}
+.homemade
+{
+	font-family: 'Homemade Apple', cursive;
+}
+.kristi
+{
+	font-family: 'Kristi', cursive;
+}
+.montserrat
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.neucha
+{
+	font-family: 'Neucha', cursive;
+}
+.nunito
+{
+	font-family: 'Nunito', sans-serif;
+}
+.quicksand
+{
+	font-family: 'Quicksand', sans-serif;
+}
+.sigmar
+{
+	font-family: 'Sigmar One', cursive;
+}
+
+/* Animations au survol de la souris */
+
+.zoom
+{
+	transition-duration: 1s;
+}
+.zoom:hover
+{
+	transform: scale(1.1);
+}

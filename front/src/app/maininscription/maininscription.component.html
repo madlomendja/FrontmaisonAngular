@@ -1,0 +1,56 @@
+<div class=" bg-secondary text-center" >
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Inscription</h2><span><img id="logo" src="assets/logomaison.PNG" alt="logo d'une maison"></span><br>
+       
+    </div>
+    <hr>
+    <form >
+     
+        <!-- Bouton radio 
+        <p>
+            Constructeur  <input type="radio" name="choix" /><br />
+            Maire  <input type="radio" name="choix" /><br />
+            Client  <input type="radio" name="choix" />
+        </p>-->
+        <!-- Liste de selection--->
+        <label for="role">Vous êtes un...</label>
+        <select name="role" id="role" class="selectBox" required>
+            <option value=""></option>
+            <option value="Opt1">Client</option>
+            <option value="Opt2" selected>Constructeur</option> Attribtut selected = option selectionné 
+            <option value="Opt3">Maire</option>
+        </select>
+        <br>
+
+        <!-- Name pour bouton radio = nom du groupe de boutons radios -->
+        <br><br>
+        <label for="nom">Nom :</label><!-- <label for=""> for=id du champs de formulaire concerné -->
+        <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
+        <br><br>
+        <label for="prenom">prenom :</label><!-- <label for=""> for=id du champs de formulaire concerné -->
+        <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
+            <br><br>
+        <label for="email">Login :</label>
+        <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br>
+        <br>
+        <label for="Mot de passe">Mot de passe :</label>
+        <input type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required><!-- Champs type Tel -->
+        <br><br><br>
+        
+      
+        <!--<label for="fichier">Fichier Joint</label>
+        <input type="file" name="fichier" id="fichier" accept=".png,.jpg">--->
+        <br>
+        <!-- Bouton Validation -->
+        <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
+        <input type="button" name="Se connecter" id="connection" value="Se connecter" class="bouton" routerLink="connection" routerLinkActive="active" >
+        <!-- Bouton Remise à Zero du Formulaire 
+        <input type="reset" name="effacer" id="effacer" value="Effacer" class="bouton alert">------------->
+        <div class="clear"></div>
+    </form>
+</div>
+
+
