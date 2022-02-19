@@ -3,17 +3,12 @@
     <div class="row text-center py-5 ">
         <!--première ligne-->
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-            <form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <form id="Bienvenue">
+                <h1 class="text-white">Bienvenue</h1><br>
+                <h4>Vous êtes un particulier...</h4>
+                <br><br>
+                <!--<a href="#etape1"></a>-->
+                <p>suivant</p>
             </form>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
@@ -21,17 +16,17 @@
         <!--deuxième ligne-->
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-            <form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+            <form >
+                <h5 id="etape1" class="text-white">Veuillez selectionnez un secteur</h5><br>
+                <select name="secteur" id="secteur" class="selectBox" required>
+                    <option value="opt"selected></option>Attribtut selected = option selectionné 
+                    <option value="opt0">Secteur au Nord de paris</option>
+                    <option value="Opt1">Secteur à l'Est de paris</option>
+                    <option value="Opt2" >Secteur au Sud de paris</option> 
+                    <option value="Opt3">Secteur à l'Est de paris</option>
+                </select><br><br>
+                 <!--<a href="#etape2"></a>-->
+                <p>suivant</p>
             </form>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
@@ -40,52 +35,107 @@
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
             <form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <h5 id="etape2" class="text-white">Veuillez selectionnez un terrain</h5><br>
+                <select name="secteur" id="secteur" class="selectBox" required>
+                    <option value="opt"selected></option>Attribtut selected = option selectionné 
+                    <option value="opt0">Terrain 1</option>
+                    <option value="Opt1">Terrain 2</option>
+                    <option value="Opt2">Terrain 3</option> 
+                    <option value="Opt3">Terrain 4</option>
+                </select><br><br>
+                <!--<a href="#etape3"></a>-->
+               <p>suivant</p>
+                
             </form>
         </div>
         <!--quatrième ligne-->
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
             <form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <h5 id="etape3" class="text-white">Veuillez selectionnez un type de maison</h5><br>
+                <select name="secteur" id="secteur" class="selectBox" required>
+                    <option value="opt"selected></option>Attribtut selected = option selectionné 
+                    <option value="opt0">Type A</option>
+                    <option value="Opt1">Type B</option>
+                    <option value="Opt2">Type C</option> 
+                    <option value="Opt3">Type D</option>
+                </select><br><br>
+                <!--<a href="#etape4"></a>-->
+               <p>suivant</p>
             </form>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
         <!--cinquième ligne-->
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
             <form>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>  
+                <h5 id="etape4" class="text-white">Veuillez confirmer votre choix</h5><br>
+                <p>Le secteur <br>Le Terrain <br>le type de maison</p>
+                <button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Valider</span><i
+                    class=""></i></button><br><br>
+                <!--<a href="#etape5"></a>-->
+               <p>suivant</p>
             </form>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <!--sixième ligne-->
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+             <form >
+                <h5 id="etape5" class="text-white">Veuillez importer les justificatifs</h5><br>
+                <label for="fichier">Vos justificatifs</label>
+                <input type="file" name="fichier" id="fichier" accept=".png,.jpg">
+                <!--<a href="#etape6"></a>-->
+               <p>suivant</p>
+                
+             </form>
+         </div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <!--septieme ligne-->
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+             <form>
+                <h5 id="etape6" class="text-white">Votre dossier est complet</h5><br>
+                <p>Nous restons à votre disposition pour toute demande d'information sur le suivi</p> 
+                <!--<a href="#etape7"></a>-->
+               <p>suivant</p> 
+             </form>
+         </div>
+          <!--huitième ligne-->
+          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+              <form >
+                 <h5 id="etape" class="text-white">Votre dossier est incomplet</h5><br>
+                 <p>Nous vous contacterons prohainement pour faire le point.</p>
+                 
+                 <!--<a href="#etape8"></a>-->
+                <p>suivant</p>  
+              </form>
+          </div>
+        <!--neuvième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form >
+                <h5 id="etape8" class="text-white">La banque a accepté votre demande de Credit</h5><br><p>la construction de votre maison va débuter</p>
+                 <!--<a href="#etape9"></a>-->
+                <p>suivant</p>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <!--dixième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form>
+                <h5 id="etape9" class="text-white">La banque a refusé votre demande de credit</h5><br>
+                <p>Nous vous contacterons prochainement pour faire le point</p>
+                <!--<a href="#etape3"></a>-->
+               <p>suivant</p>
+                
+            </form>
+        </div>
+        
         
     </div>
 </div>
