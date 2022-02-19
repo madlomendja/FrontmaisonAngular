@@ -9,7 +9,7 @@
     <hr>
     <form >
      
-        <!-- Bouton radio 
+        <!-- Bouton radio
         <p>
             Constructeur  <input type="radio" name="choix" /><br />
             Maire  <input type="radio" name="choix" /><br />
@@ -17,28 +17,113 @@
         </p>-->
         <!-- Liste de selection--->
         <label for="role">Vous êtes un...</label>
-        <select name="role" id="role" class="selectBox" required>
+        <!--<select name="role" id="role" class="selectBox" required>
             <option value=""></option>
             <option value="Opt1">Client</option>
             <option value="Opt2" selected>Constructeur</option> Attribtut selected = option selectionné 
             <option value="Opt3">Maire</option>
-        </select>
+        </select>--->
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+              <div class="item">
+                 <div class="item-header" id="headingOne">
+                    <h2 class="mb-0">
+                       <button class="btn btn-link" type="button" data-toggle="collapse"
+                          data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Maire
+                       <i class="fa fa-angle-down"></i>
+                       </button>
+                    </h2>
+                 </div>
+                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="t-p">
+                        <form action="">
+                            <label for="nom">Nom :</label>
+                                <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
+                                <br><br>
+                                <label for="prenom">prenom :</label>
+                                <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
+                                    <br><br>
+                                <label for="ville">Ville:</label>
+                                <input type="text" name="ville" class="ligne simple" placeholder="Insérez votre ville*" value="" required><br><br><label for="email">Login :</label>
+                                <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br><br> 
+                                <label for="Mot de passe">Mot de passe :</label>
+                                <input type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required>
+                                <br><br><label for="fichier">Pièce d'identé Maire</label>
+                                <input type="file" name="fichier" id="fichier" accept=".png,.jpg, .pdf"><br><br> <button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Envoyer</span><i
+                                    class=""></i></button>
+                        </form>
+                    </div>
+                 </div>
+              </div>
+              <div class="item">
+                 <div class="item-header" id="headingTwo">
+                    <h2 class="mb-0">
+                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       Un Client
+                       <i class="fa fa-angle-down"></i>
+                       </button>
+                    </h2>
+                 </div>
+                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionExample">
+                    <div class="t-p">
+                        <form action="">
+                            <label for="nom">Nom :</label>
+                                <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
+                                
+                                <label for="prenom"> Prenom :</label>
+                                <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
+                                    <br><br><label for="adresse"> votre adresse</label><input type="text" name="adresse" class="ligneSimple" placeholder="Inserez votre adresse*"><label for="telephone">Portable:</label><input type="tel" name="tel" id="tel" placeholder="Inserez votre portable*" value="" required><br><br><label for="metier">Votre métier :</label><input type="text" name="metier" id="metier" placeholder="Inserez votre métier*" value="" required><label for="DateNaissance">Votre date de naissance</label><input type="date" name="dateNaissance" id="dateNaissance" value="" required><br><br><label for="situationfamiliale">Votre situation familiale :</label><input type="text" name="situationfamiliale" id="situationfamiliale" placeholder="Votre situation familiale*" value="" required><br><br><label for="nombreEnfant"> Le nombre d'enfant est de :</label><input type="number" name="nombreEnfant" id="nombreEnfant" placeholder="le nombre d'enfants*" value="" required><br><br>
+                                <label for="email">Login :</label>
+                                <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required>
+                                <label for="Mot de passe">Mot de passe :</label>
+                                <input type="password" name="password" id="password"  placeholder=" Votre mot de passe*"value="" required><br><br><button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Envoyer</span><i
+                                    class=""></i></button>
+                        </form>
+                    </div>
+                 </div>
+              </div>
+              <div class="item">
+                 <div class="item-header" id="headingThree">
+                    <h2 class="mb-0">
+                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false"
+                          aria-controls="collapseThree">
+                    Un Constructeur
+                       <i class="fa fa-angle-down"></i>
+                       </button>
+                    </h2>
+                 </div>
+                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                    data-parent="#accordionExample">
+                    <div class="t-p">
+                        <form action="">
+                            <label for="nom">Nom :</label>
+                                <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
+                                <br><br>
+                                <label for="prenom">prenom :</label>
+                                <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
+                                    <br><br>
+                                <label for="email">Login :</label>
+                                <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br>
+                                <br>
+                                <label for="Mot de passe">Mot de passe :</label>
+                                <input type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required><br><br><button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Envoyer</span><i
+                                    class=""></i></button>
+                                <br><br>
+                                
+                        </form>
+                    </div>
+                 </div>
+              </div>
+              
+            </div>
+            </div>
         <br>
 
-        <!-- Name pour bouton radio = nom du groupe de boutons radios -->
-        <br><br>
-        <label for="nom">Nom :</label><!-- <label for=""> for=id du champs de formulaire concerné -->
-        <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
-        <br><br>
-        <label for="prenom">prenom :</label><!-- <label for=""> for=id du champs de formulaire concerné -->
-        <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
-            <br><br>
-        <label for="email">Login :</label>
-        <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br>
-        <br>
-        <label for="Mot de passe">Mot de passe :</label>
-        <input type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required><!-- Champs type Tel -->
-        <br><br><br>
         
       
         <!--<label for="fichier">Fichier Joint</label>
@@ -46,7 +131,7 @@
         <br>
         <!-- Bouton Validation -->
         <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
-        <input type="button" name="Se connecter" id="connection" value="Se connecter" class="bouton" routerLink="connection" routerLinkActive="active" >
+        <input type="button" name="Se connecter" id="connection" value="Se connecter" class="bouton" [routerLink]="['/connection']" >
         <!-- Bouton Remise à Zero du Formulaire 
         <input type="reset" name="effacer" id="effacer" value="Effacer" class="bouton alert">------------->
         <div class="clear"></div>
