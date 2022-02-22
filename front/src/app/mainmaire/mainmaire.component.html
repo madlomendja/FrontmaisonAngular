@@ -1,92 +1,119 @@
 <div class="container-fluid bebas p-5 bg-secondary dimension">
     
-        <div class="row text-center py-5 ">
-            <!--première ligne-->
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </form>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <!--deuxième ligne-->
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </form>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <!--troisième ligne-->
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </form>
-            </div>
-            <!--quatrième ligne-->
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </form>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <!--cinquième ligne-->
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
-                <form>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>  
-                </form>
-            </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
-            
+    <div class="row text-center py-5 ">
+        <!--première ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form id="Bienvenue">
+                <h1 class="text-white">Bienvenue</h1><br>
+                <h4>Vous êtes un maire...</h4>
+                <br><br>
+                <!--<a href="#etape1"></a>-->
+                <p>suivant</p>
+            </form>
         </div>
-</div>
-
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <!--deuxième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form >
+                <h5 id="etape1" class="text-white">Veuillez selectionnez un secteur</h5><br>
+                <select name="secteur" id="secteur" class="selectBox" required>
+                    <option value="opt"selected></option>Attribtut selected = option selectionné 
+                    <option value="opt0">Secteur au Nord de paris</option>
+                    <option value="Opt1">Secteur à l'Est de paris</option>
+                    <option value="Opt2" >Secteur au Sud de paris</option> 
+                    <option value="Opt3">Secteur à l'Est de paris</option>
+                </select><br><br>
+                 <!--<a href="#etape2"></a>-->
+                <p>suivant</p>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <!--troisième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form>
+                <h5 id="etape2" class="text-white">Veuillez renseigner la ville et importez votre pièce d'identité</h5><br><label for="ville"></label>
+                <input type="text" name="ville" class="ligne simple" placeholder="Insérez votre ville" value="" required><br><label for="fichier">Votre pièce d'identé</label>
+                <input type="file" name="fichier" id="fichier" accept=".png,.jpg, .pdf"> <br><br>
+                
+                <!--<a href="#etape3"></a>-->
+               <p>suivant</p>
+                
+            </form>
+        </div>
+        <!--quatrième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form>
+                <h5 id="etape3" class="text-white">Veuillez renseigner les informations suivantes sur le terrain</h5><br><label for="superficieKm2">superficie en Km2 :</label>
+                <input type="number" name="superficieKm2" id="superficieKm2" class="ligneSimple" placeholder="Insérer la superficie *" value="" required>
+                <br>
+                <label for="trajetAllerRetourParisEnMinutes">trajet Aller-Retour Paris en Minutes :</label>
+                <input type="number" name="trajetAllerRetourParisEnMinutes" id="trajetAllerRetourParisEnMinutes" class="ligneSimple" placeholder="Insérer la durée en minutes *" value="" required>
+                    <br>
+                <label for="DistanceGareKms">Distance d'une gare en KM:</label>
+                <input type="number" name="DistanceGareKms" id="DistanceGareKms" class="ligneSimple" placeholder="Insérer la distance *" value="" required><br>
+                <label for="DistanceBusKms">Distance d'un bus en KM:</label>
+                <input type="number" name="DistanceBusKms" id="DistanceGBusKms" class="ligneSimple" placeholder="Insérer la distance *" value="" required><br><label for="DistanceHopitalKms">Distance d'un hôpital en KM:</label>
+                <input type="number" name="DistanceHopitalKms" id="DistanceHopitalKms" class="ligneSimple" placeholder="Insérer la distance *" value="" required><br><label for="DistanceEtablissementScolaireKms">Distance d'un Etablissement Scolaire en KM:</label>
+                <input type="number" name="DistanceEtablissementScolaireKms" id="DistanceEtablissementScolairelKms" class="ligneSimple" placeholder="Insérer la distance *" value="" required><br><br>
+                <!--<a href="#etape4"></a>-->
+               <p>suivant</p>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <!--cinquième ligne-->
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+            <form>
+                <h5 id="etape4" class="text-white">Veuillez importer les photos et une description du terrain</h5><br>
+                <label for="fichier">Photos</label>
+                <input type="file" name="fichier" id="fichier" accept=".png,.jpg, .pdf"><br> <label for="fichier">Description terrain</label>
+                <input type="file" name="fichier" id="fichier" accept=".png,.jpg, .pdf"><br><br>
+                <!--<a href="#etape5"></a>-->
+               <p>suivant</p>
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+        <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <!--sixième ligne-->
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+             <form >
+                <h5 id="etape6" class="text-white">Le dossier est conforme, le terrain sera mis en ligne d'ici quelques jours</h5><br><br>
+                <p>Nous restons à votre disposition pour toute demande d'information sur le suivi</p> 
+                <!--<a href="#etape7"></a>-->
+                <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >  
+             </form>
+         </div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <!--septieme ligne-->
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+             <form>
+                <h5 id="etape6" class="text-white">Le dossier n'est pas conforme</h5><br><br>
+                <p>Nous vous contacterons prochainement pour faire le point sur le terrain</p> 
+                <!--<a href="#etape7"></a>-->
+                <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
+             </form>
+         </div>
+          <!--huitième ligne-->
+          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
+          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
+              <form >
+                 <h5 id="etape" class="text-white">Souhaitez vous enregistrez un autre terrain ?</h5><br>
+                 <p>oui <br> non</p><br><br>
+                 <!--<a href="#etape8"></a>-->
+                 <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
+              </form>
+          </div>
+      
+                
+          
+        </div>
+        
+        
+    </div>

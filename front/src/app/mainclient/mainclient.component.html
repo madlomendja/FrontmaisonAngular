@@ -82,9 +82,10 @@
          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
          <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 border border border-dark rounded">
              <form >
-                <h5 id="etape5" class="text-white">Veuillez importer les justificatifs</h5><br>
+                <h5 id="etape5" class="text-white">Veuillez renseigner les informations et importer les justificatifs</h5><br>
+                <label for="adresse"> votre adresse</label><input type="text" name="adresse" class="ligneSimple" placeholder="Inserez votre adresse*"> <br><label for="telephone">Votre portable:</label><input type="tel" name="tel" id="tel" placeholder="Inserez votre portable*" value="" required><br><label for="metier">Votre métier :</label><input type="text" name="metier" id="metier" placeholder="Inserez votre métier*" value="" required><br><label for="DateNaissance">Votre date de naissance</label><input type="date" name="dateNaissance" id="dateNaissance" value="" required><br><label for="situationfamiliale">Votre situation familiale :</label><input type="text" name="situationfamiliale" id="situationfamiliale" placeholder="Votre situation familiale*" value="" required><br><label for="nombreEnfant"> nombre d'enfant est de :</label><input type="number" name="nombreEnfant" id="nombreEnfant" placeholder=" nombre d'enfants*" value="" required><br>
                 <label for="fichier">Vos justificatifs</label>
-                <input type="file" name="fichier" id="fichier" accept=".png,.jpg">
+                <input type="file" name="fichier" id="fichier" accept=".png,.jpg"><br><br>
                 <!--<a href="#etape6"></a>-->
                <p>suivant</p>
                 
@@ -99,7 +100,7 @@
                 <h5 id="etape6" class="text-white">Votre dossier est complet</h5><br>
                 <p>Nous restons à votre disposition pour toute demande d'information sur le suivi</p> 
                 <!--<a href="#etape7"></a>-->
-               <p>suivant</p> 
+                <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
              </form>
          </div>
           <!--huitième ligne-->
@@ -110,7 +111,7 @@
                  <p>Nous vous contacterons prohainement pour faire le point.</p>
                  
                  <!--<a href="#etape8"></a>-->
-                <p>suivant</p>  
+                 <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >  
               </form>
           </div>
         <!--neuvième ligne-->
@@ -119,7 +120,7 @@
             <form >
                 <h5 id="etape8" class="text-white">La banque a accepté votre demande de Credit</h5><br><p>la construction de votre maison va débuter</p>
                  <!--<a href="#etape9"></a>-->
-                <p>suivant</p>
+                 <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton " routerLink="" routerLinkActive="active" >
             </form>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 py-3 px-5 "></div>
@@ -131,7 +132,7 @@
                 <h5 id="etape9" class="text-white">La banque a refusé votre demande de credit</h5><br>
                 <p>Nous vous contacterons prochainement pour faire le point</p>
                 <!--<a href="#etape3"></a>-->
-               <p>suivant</p>
+                <input type="button" name="accueil" id="accueil" value="Retour à l'Accueil" class="bouton" routerLink="" routerLinkActive="active" >
                 
             </form>
         </div>
