@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormulaireService } from '../services/formulaire.service';
+import { InscriptionService } from '../services/inscription.service';
 
 @Component({
   selector: 'app-maininscription',
@@ -13,9 +13,10 @@ export class MaininscriptionComponent implements OnInit {
     prenom : '',
     email : '',
     password : '',
+    status : '',
   }
 
-  constructor(private service : FormulaireService) { 
+  constructor(private service : InscriptionService) { 
 
   }
 

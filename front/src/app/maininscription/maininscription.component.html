@@ -50,7 +50,7 @@
                                 <label for="Mot de passe">Mot de passe :</label>
                                 <input [(ngModel)]="formulaire.password" type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required>
                                 <label for="status">statut :</label>
-                                <input type="text" name="status" id="status" value="maire" >
+                                <input [(ngModel)]="formulaire.status" type="text" name="status" id="status" value="maire" >
                                 <br><br><button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Envoyer</span><i
                                     class=""></i></button>
                         </form>
