@@ -38,17 +38,17 @@
                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
                     <div class="t-p">
-                        <form action="">
+                        <form (ngSubmit)=onsubmit()>
                             <label for="nom">Nom :</label>
-                                <input type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
+                                <input input [(ngModel)]="formulaire.nom" type="text" name="nom" id="nom" class="ligneSimple" placeholder="Insérer votre nom *" value="" required>
                                 <br><br>
                                 <label for="prenom">prenom :</label>
-                                <input type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
+                                <input input [(ngModel)]="formulaire.prenom" type="text" name="prenom" id="prenom" class="ligneSimple" placeholder="Insérer votre prenom *" value="" required>
                                     <br><br>
                                 <label for="email">Login :</label>
-                                <input type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br><br> 
+                                <input [(ngModel)]="formulaire.email" type="email" name="email" id="email" class="ligneSimple" placeholder="Insérer votre email *" value="" required><br><br> 
                                 <label for="Mot de passe">Mot de passe :</label>
-                                <input type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required>
+                                <input [(ngModel)]="formulaire.password" type="password" name="password" id="password"  placeholder=" Votre mot de passe "value="" required>
                                 <label for="status">statut :</label>
                                 <input type="text" name="status" id="status" value="maire" >
                                 <br><br><button type="submit" id="submit" class="btn btn-secondary bg-success"><span class="mx-3">Envoyer</span><i

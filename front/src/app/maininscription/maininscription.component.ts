@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormulaireService } from '../services/formulaire.service';
 
 @Component({
   selector: 'app-maininscription',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaininscriptionComponent implements OnInit {
 
-  constructor() { }
+  formulaire = {
+    nom : '',
+    prenom : '',
+    email : '',
+    password : '',
+  }
+
+  constructor(private service : FormulaireService) { 
+
+  }
 
   ngOnInit(): void {
+  }
+
+  onsubmit(){
+    console.log('soumission', this.formulaire)
+    this.service.recuperation(this.formulaire).subscribe(fleche => {
+      console.log(fleche)
+    })
   }
 
 }

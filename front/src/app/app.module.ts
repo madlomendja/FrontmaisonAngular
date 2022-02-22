@@ -11,6 +11,8 @@ import { MaininscriptionComponent } from './maininscription/maininscription.comp
 import { MainconnectionComponent } from './mainconnection/mainconnection.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListeMaisonComponent } from './liste-maison/liste-maison.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ListeMaisonComponent } from './liste-maison/liste-maison.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
